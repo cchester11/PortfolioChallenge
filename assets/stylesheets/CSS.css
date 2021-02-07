@@ -1,0 +1,64 @@
+body {
+	background-image: url("../images/bookshelf.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: times;
+	color: white;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header { 
+	background: teal;
+	padding: 20px 35px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+}
+header h1 {
+	font-weight: bold;
+	margin: 0;
+	font-size: 40px;
+}
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	margin: 0 30px;
+	color: white;
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+.bio{
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction allowed for the children to stack on top of eachother rather than
+	sit next to eachother */
+	flex-direction: column;
+	/* now that I've dictacted these are a column, I have to use align-items becuase these 
+	children are on the Y axis */
+	align-items: center;
+	justify-content: space-around;
+	margin: 50px auto 50px auto;
+}
+
+p {
+	background: teal;
+	padding: 50px;
+	font-size: 35px;
+	line-height: 1.5em;
+	color: white;
+	margin: 0 100px;
+}
