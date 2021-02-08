@@ -16,20 +16,20 @@ header {
 	background: teal;
 	padding: 20px 35px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
 }
-header h1 {
+.header-h1 {
 	font-weight: bold;
-	margin: 0;
+	margin: 0 auto 0 3%;
 	font-size: 40px;
 }
 header nav ul {
 	list-style: none;
 	display: flex;
-	justify-content: space-evenly;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -51,14 +51,44 @@ header nav ul li a {
 	children are on the Y axis */
 	align-items: center;
 	justify-content: space-around;
-	margin: 50px auto 50px auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	background: teal;
+	padding: 25px;
 }
 
-p {
-	background: teal;
-	padding: 50px;
+.bio-h2 {
+	display:flex;
+	align-self: flex-start;
+	color: white;
+	font-size: 40px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.bio-p {
+	display: flex;
+	align-self: flex-start;
+	margin-left: 3%;
+	margin-right: 3%;
 	font-size: 35px;
 	line-height: 1.5em;
 	color: white;
-	margin: 0 100px;
+	padding-top: 20px;
+}
+
+footer {
+	background: teal;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-top: 100px;
+	padding: 25px;
+}
+
+footer h2 {
+	margin-left: 3%;
+	color: white;
+	display: flex;
+	font-size: 36px;
 }
