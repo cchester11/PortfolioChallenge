@@ -36,9 +36,18 @@ header nav ul {
 header nav ul li a {
 	text-decoration: none;
 	margin: 0 30px;
-	color: white;
+	color: rgba(255, 255, 255, 1.0);
 	font-size: 30px;
-	font-weight: lighter;
+	font-weight: bolder;
+}
+
+header nav ul li a:hover {
+	color: rgba(255, 255, 0, 1.0);
+	font-size: 35px;
+}
+
+header nav button a {
+	border-radius: 15px;
 }
 
 .section-body{
@@ -53,8 +62,12 @@ header nav ul li a {
 	justify-content: space-around;
 	margin: 100px 50px 50px 50px;
 	border-radius: 15px;
-	background: teal;
+	background: rgba(0, 128, 128, 0.75);
 	padding: 25px;
+}
+.section-body:hover {
+	background:rgba(0, 128, 128, 1.0);
+	outline: none;
 }
 
 .section-title {
