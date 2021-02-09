@@ -1,9 +1,8 @@
 body {
-	background-image: url("../images/bookshelf.jpg");
 	background-size: cover;
 	background-position: center;
 	font-family: times;
-	color: white;
+	color: rgba(0,0,0, 1.0);
 }
 
 * {
@@ -21,6 +20,7 @@ header {
 	align-items: center;
 }
 .header-h1 {
+	color: white;
 	font-weight: bold;
 	margin: 0 auto 0 3%;
 	font-size: 40px;
@@ -42,8 +42,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	color: rgba(255, 255, 0, 1.0);
+	background: white;
+    color: teal;
+	padding: 5px;
 	font-size: 35px;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 header nav button a {
@@ -58,17 +62,16 @@ header nav button a {
 	flex-direction: column;
 	/* now that I've dictacted these are a column, I have to use align-items becuase these 
 	children are on the Y axis */
-	align-items: center;
-	justify-content: space-around;
 	margin: 100px 50px 50px 50px;
 	border-radius: 15px;
-	background: rgba(0, 128, 128, 0.75);
+	background: rgba(0, 128, 128, 1.0);
 	padding: 25px;
 }
 .section-body:hover {
-	background:rgba(0, 128, 128, 1.0);
+	background:rgba(0, 128, 128, 0.75);
+	box-shadow:10px 10px 10px rgba(255, 255, 0, 0.8);
 	outline: none;
-	padding: 35px;
+	padding: 33px;
 }
 
 .section-title {
@@ -80,7 +83,7 @@ header nav button a {
 	margin-right: 3%;
 }
 
-.About-Me-p {
+p {
 	display: flex;
 	align-self: flex-start;
 	margin-left: 3%;
@@ -91,9 +94,57 @@ header nav button a {
 	padding-top: 20px;
 }
 
+.contact-info p {
+	display: flex;
+	align-self: flex-start;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-size: 35px;
+	line-height: 1.5em;
+	color: teal;
+	padding-top: 20px;
+	border-bottom: 1px solid teal;
+}
+
+.contact-info a {
+	color: teal;
+	text-decoration-color: teal;
+	text-decoration-line: none;
+}
+
+.contact-info h3 {
+	display: flex;
+	align-self: flex-start;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-size: 35px;
+	line-height: 1.5em;
+	color: teal;
+	padding-top: 20px;
+	border-bottom: 3px solid teal;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items:baseline;
+	background: rgba(255, 255, 0, 1.0);
+	padding: 50px;
+}
+
+.contact-info-title {
+	display:flex;
+	align-self: flex-start;
+	color:teal;
+	font-size: 40px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
 footer {
 	background: teal;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: left;
 	position: sticky;
