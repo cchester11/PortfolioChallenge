@@ -41,7 +41,7 @@ header nav ul li a {
 	font-weight: lighter;
 }
 
-.bio{
+.section-body{
 	display: flex;
 	flex-wrap: wrap;
 	/* flex-direction allowed for the children to stack on top of eachother rather than
@@ -51,13 +51,13 @@ header nav ul li a {
 	children are on the Y axis */
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 100px;
-	margin-bottom: 50px;
+	margin: 100px 50px 50px 50px;
+	border-radius: 15px;
 	background: teal;
 	padding: 25px;
 }
 
-.bio-h2 {
+.section-title {
 	display:flex;
 	align-self: flex-start;
 	color: white;
@@ -66,7 +66,7 @@ header nav ul li a {
 	margin-right: 3%;
 }
 
-.bio-p {
+.About-Me-p {
 	display: flex;
 	align-self: flex-start;
 	margin-left: 3%;
@@ -82,7 +82,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	margin-top: 100px;
+	position: sticky;
 	padding: 25px;
 }
 
