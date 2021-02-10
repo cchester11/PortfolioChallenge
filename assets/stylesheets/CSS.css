@@ -69,14 +69,14 @@ header nav button a {
 }
 
 .zero:hover {
-	background-image: url(../images/pexel1.jpeg);
+	background-image: url("../images/pexel1.jpeg");
 	background-position: center;
 	background-size: cover;
 	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
 }
 
 .two:hover {
-	background-image: url(../images/flipped-hero-bg\ copy.jpg);
+	background-image: url("../images/flipped-hero-bg\ copy.jpg");
 	background-position: center;
 	background-size: cover;
 	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
