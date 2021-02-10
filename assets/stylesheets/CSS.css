@@ -54,7 +54,7 @@ header nav button a {
 	border-radius: 15px;
 }
 
-.section-body{
+.section-body {
 	display: flex;
 	flex-wrap: wrap;
 	/* flex-direction allowed for the children to stack on top of eachother rather than
@@ -67,11 +67,33 @@ header nav button a {
 	background: rgba(0, 128, 128, 1.0);
 	padding: 25px;
 }
-.section-body:hover {
-	background:rgba(0, 128, 128, 0.75);
-	box-shadow:10px 10px 10px rgba(255, 255, 0, 0.8);
-	outline: none;
-	padding: 33px;
+
+.zero:hover {
+	background-image: url(../images/pexel1.jpeg);
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
+}
+
+.two:hover {
+	background-image: url(../images/flipped-hero-bg\ copy.jpg);
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
+}
+
+.three:hover {
+	background-image: url("../images/digital-marketing-meeting\ copy.jpg");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
+}
+
+.four:hover {
+	background-image: url("../images/perchgolden.jpg");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
 }
 
 .section-title {
@@ -81,6 +103,12 @@ header nav button a {
 	font-size: 40px;
 	margin-left: 3%;
 	margin-right: 3%;
+}
+
+.section-title a {
+	color: yellow;
+	text-decoration-color: rgba(255, 255, 0, 1.0);
+	text-decoration-line: none;
 }
 
 p {
