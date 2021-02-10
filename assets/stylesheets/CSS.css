@@ -62,10 +62,18 @@ header nav button a {
 	flex-direction: column;
 	/* now that I've dictacted these are a column, I have to use align-items becuase these 
 	children are on the Y axis */
-	margin: 100px 50px 50px 50px;
+	margin: 100px 50px 100px 50px;
 	border-radius: 15px;
 	background: rgba(0, 128, 128, 1.0);
 	padding: 25px;
+}
+
+.section-body p:hover {
+	text-shadow: 5px 5px 5px rgba(0,0,0, 1.0);
+}
+
+.two, .three, .four {
+	padding: 75px;
 }
 
 .zero:hover {
