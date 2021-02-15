@@ -19,12 +19,14 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 }
+
 .header-h1 {
 	color: white;
 	font-weight: bold;
 	margin: 0 auto 0 3%;
 	font-size: 40px;
 }
+
 header nav ul {
 	list-style: none;
 	display: flex;
@@ -162,6 +164,7 @@ p {
 
 .contact-info {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items:baseline;
 	background: rgba(255, 255, 0, 1.0);
@@ -170,6 +173,7 @@ p {
 
 .contact-info-title {
 	display:flex;
+	flex-wrap: wrap;
 	align-self: flex-start;
 	color:teal;
 	font-size: 40px;
@@ -192,4 +196,90 @@ footer h2 {
 	color: white;
 	display: flex;
 	font-size: 36px;
+}
+
+@media screen and (max-width: 980px) {
+	header {
+	position: relative;
+	padding-bottom: 0;
+	justify-content: center;
+	}
+	
+	header h1 {
+	width: 100%;
+	text-align: center;
+	}
+	
+	header nav ul {
+	margin-top: 20px;
+	width: 100%;
+	justify-content: center;
+	}
+	
+	header nav ul li a {
+	font-size: 20px;
+	}
+	
+	footer h2, footer div {
+	text-align: center;
+	width: 100%;
+	}
+
+	.section-title {
+		width: 80%;
+	}
+	
+	.section-body {
+		flex: 0 70%;
+	}
+	
+	.contact-info {
+		flex: 1 100%;
+	}
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+section {
+	padding: 30px 15px;
+}
+
+section-body {
+	flex: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+p {
+	flex: 100%;  
+}
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+.section-title {
+	width: 95%;
+}
+
+header p {
+	width: 100%;
+}
+
+.section-body {
+	flex: 0 100%;
+}
+
+.contact-info {
+	text-align: center;
+}
+
+  .contact-info > * {
+	flex: 0 100%;
+}
+
+.contact-form {
+	order: 3;
+}
 }
