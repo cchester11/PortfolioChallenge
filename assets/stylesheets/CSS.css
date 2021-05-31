@@ -106,6 +106,13 @@ header nav button a {
 	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
 }
 
+.five:hover {
+	background-image: url("../Images/bg.jpg");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.8);
+}
+
 .section-title {
 	display:flex;
 	align-self: flex-start;
